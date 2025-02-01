@@ -49,6 +49,23 @@ body {
   min-height: 200px;
 }
 
+.container .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .options button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
 .counters-container {
   display: flex;
   justify-content: center;

@@ -4,6 +4,7 @@ const characterCountElement = document.querySelector("#character-count");
 const sentenceCountElement = document.querySelector("#sentence-count");
 const lettersDensityElement = document.querySelector("#letters-density");
 const excludeSpacesCheckbox = document.querySelector("#exclude-spaces");
+const resetButton = document.querySelector("#reset");
 
 textBoxElement.addEventListener("input", () => {
   const text = textBoxElement.value;
@@ -76,4 +77,13 @@ textBoxElement.addEventListener("input", () => {
 
     lettersDensityElement.appendChild(letterItem);
   });
+});
+
+resetButton.addEventListener("click", () => {
+  textBoxElement.value = "";
+  wordCountElement.textContent = 0;
+  characterCountElement.textContent = 0;
+  sentenceCountElement.textContent = 0;
+  lettersDensityElement.innerHTML = "";
+  excludeSpacesCheckbox.checked = false;
 });
