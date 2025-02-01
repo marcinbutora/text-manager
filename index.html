@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Word Counter</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Text Manager</h1>
+    <div class="textarea-container">
+      <textarea id="text" class="text-box" placeholder="Enter text..."></textarea>
+    </div>
+    <div class="counters-container">
+      <div class="word-count">
+        <h3 class="count-title">Word Count</h3>
+        <p id="word-count" class="count">0</p>
+      </div>
+      <div class="character-count">
+        <h3 class="count-title">Character Count</h3>
+        <p id="character-count" class="count">0</p>
+      </div>
+      <div class="sentence-count">
+        <h3 class="count-title">Sentence Count</h3>
+        <p id="sentence-count" class="count">0</p>
+      </div>
+    </div>
+    <div class="letters-density-container">
+      <h2 class="letters-density-title">Letters Density</h2>
+      <div id="letters-density" class="letters-density"></div>
+    </div>
+  </div>
+
+  <footer class="footer">2025 &copy; Marcin Butora</footer>
+  <script src="./app.js"></script>
+</body>
+
+</html>
