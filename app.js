@@ -16,7 +16,7 @@ textBoxElement.addEventListener("input", () => {
   const letterDensity = {};
   for (let i = 0; i < text.length; i++) {
     const char = text[i].toLowerCase();
-    if (char >= "a" && char <= "z") {
+    if (char.match(/[a-ząćęłńóśżź]+/i)) {
       // Liczymy tylko litery
       if (letterDensity[char]) {
         letterDensity[char]++;
