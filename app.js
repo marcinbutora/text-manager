@@ -3,11 +3,21 @@ const wordCountElement = document.querySelector("#word-count");
 const characterCountElement = document.querySelector("#character-count");
 const sentenceCountElement = document.querySelector("#sentence-count");
 const lettersDensityElement = document.querySelector("#letters-density");
+const excludeSpacesCheckbox = document.querySelector("#exclude-spaces");
 
 textBoxElement.addEventListener("input", () => {
   const text = textBoxElement.value;
   wordCountElement.textContent = text.split(" ").filter((word) => word).length;
   characterCountElement.textContent = text.length;
+
+  let characterCount = text.length;
+  if (excludeSpacesCheckbox.checked) {
+    characterCount = text.replace(/\s/g, "").length;
+  } else {
+    characterCount = text.length;
+  }
+  characterCountElement.textContent = characterCount;
+
   sentenceCountElement.textContent = text
     .split(".")
     .filter((sentence) => sentence).length;
