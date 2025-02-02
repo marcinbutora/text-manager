@@ -8,6 +8,7 @@ const lettersDensityContainer = document.querySelector(
 );
 const excludeSpacesCheckbox = document.querySelector("#exclude-spaces");
 const resetButton = document.querySelector("#reset");
+const themeToggleButton = document.getElementById("theme-toggle");
 
 textBoxElement.addEventListener("input", () => {
   const text = textBoxElement.value;
@@ -94,8 +95,11 @@ resetButton.addEventListener("click", () => {
   lettersDensityElement.innerHTML = "";
   excludeSpacesCheckbox.checked = false;
 });
-const toggleLightModeButton = document.querySelector("#theme-toggle-checkbox");
 
-toggleLightModeButton.addEventListener("click", () => {
+themeToggleButton.addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
+
+  themeToggleButton.textContent = document.body.classList.contains("light-mode")
+    ? "Dark mode"
+    : "Light mode";
 });

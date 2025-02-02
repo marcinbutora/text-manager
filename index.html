@@ -5,16 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
-  <title>Word Counter</title>
+  <title>Text Analyzer</title>
 </head>
 
 <body>
-  <div class="theme-toggle">
-    <input type="checkbox" id="theme-toggle-checkbox">
-    <label for="theme-toggle-checkbox">Light Mode</label>
-  </div>
   <div class="container">
-    <h1 class="title">Text Manager</h1>
+    <h1 class="title">Text Analyzer</h1>
     <div class="textarea-container">
       <textarea id="text" class="text-box" placeholder="Enter text..."></textarea>
     </div>
@@ -25,6 +21,7 @@
       </div>
       <div class="option">
         <button id="reset">Reset</button>
+        <button id="theme-toggle">Light mode</button>
       </div>
     </div>
     <div class="counters-container">
@@ -42,7 +39,7 @@
       </div>
     </div>
     <div class="letters-density-container">
-      <h2 class="letters-density-title">Letters Density</h2>
+      <h2 class="letters-density-title">Letters Occurence</h2>
       <div id="letters-density" class="letters-density"></div>
     </div>
   </div>

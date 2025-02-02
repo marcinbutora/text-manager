@@ -62,6 +62,8 @@ body.light-mode .footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .container .title {
@@ -177,7 +179,7 @@ body.light-mode .footer {
 .density-bar .filled {
   height: 100%;
   background-color: var(--success-color);
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
 }
 
 .letter-text {
@@ -194,10 +196,4 @@ body.light-mode .footer {
   background-color: var(--background-color);
   padding: 20px 0;
   text-align: center;
-}
-
-.theme-toggle {
-  display: flex;
-  justify-content: flex-end;
-  padding: 5px;
 }
