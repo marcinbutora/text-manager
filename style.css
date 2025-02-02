@@ -19,43 +19,43 @@ body {
   background-color: var(--background-color);
   box-sizing: border-box;
 }
-body.light-mode {
+body.light {
   color: #000;
   background-color: #fff;
 }
 
-body.light-mode .container .title,
-body.light-mode .textarea-container .text-box,
-body.light-mode .container .options button,
-body.light-mode .word-count,
-body.light-mode .character-count,
-body.light-mode .sentence-count,
-body.light-mode .footer {
+body.light .container .title,
+body.light .textarea-container .text-box,
+body.light .container .options button,
+body.light .word-count,
+body.light .character-count,
+body.light .sentence-count,
+body.light .footer {
   background-color: var(--light-background-color);
   color: var(--light-text-color);
 }
 
-body.light-mode .textarea-container .text-box {
+body.light .textarea-container .text-box {
   border: 1px solid #ced4da;
 }
 
-body.light-mode .container .options button {
+body.light .container .options button {
   background-color: #007bff;
 }
 
-body.light-mode .word-count {
+body.light .word-count {
   background-color: #007bff;
 }
 
-body.light-mode .character-count {
+body.light .character-count {
   background-color: #6c757d;
 }
 
-body.light-mode .sentence-count {
+body.light .sentence-count {
   background-color: #28a745;
 }
 
-body.light-mode .footer {
+body.light .footer {
   border-top: 1px solid #ced4da;
 }
 .container {

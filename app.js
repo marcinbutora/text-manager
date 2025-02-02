@@ -97,15 +97,15 @@ resetButton.addEventListener("click", () => {
 });
 
 themeToggleButton.addEventListener("click", () => {
-  document.body.classList.toggle("light-mode");
+  document.body.classList.toggle("light");
 
-  const currentTheme = document.body.classList.contains("light-mode")
-    ? "light-mode"
-    : "dark-mode";
+  const currentTheme = document.body.classList.contains("light")
+    ? "light"
+    : "dark";
   localStorage.setItem("theme", currentTheme);
 
   themeToggleButton.textContent =
-    currentTheme === "light-mode" ? "Dark mode" : "Light mode";
+    currentTheme === "light" ? "Dark mode" : "Light mode";
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -113,6 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (savedTheme) {
     document.body.classList.add(savedTheme);
     themeToggleButton.textContent =
-      savedTheme === "light-mode" ? "Dark mode" : "Light mode";
+      savedTheme === "light" ? "Dark mode" : "Light mode";
   }
 });
