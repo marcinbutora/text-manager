@@ -94,3 +94,8 @@ resetButton.addEventListener("click", () => {
   lettersDensityElement.innerHTML = "";
   excludeSpacesCheckbox.checked = false;
 });
+const toggleLightModeButton = document.querySelector("#theme-toggle-checkbox");
+
+toggleLightModeButton.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+});
