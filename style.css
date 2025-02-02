@@ -150,8 +150,6 @@ body {
   width: 100%;
   border-top: 1px solid var(--secondary-color);
   background-color: var(--background-color);
-  padding-top: 20px;
-  margin-top: 20px;
+  padding: 20px 0;
   text-align: center;
-  margin: 20px 0;
 }
