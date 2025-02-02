@@ -3,6 +3,9 @@ const wordCountElement = document.querySelector("#word-count");
 const characterCountElement = document.querySelector("#character-count");
 const sentenceCountElement = document.querySelector("#sentence-count");
 const lettersDensityElement = document.querySelector("#letters-density");
+const lettersDensityContainer = document.querySelector(
+  ".letters-density-container"
+);
 const excludeSpacesCheckbox = document.querySelector("#exclude-spaces");
 const resetButton = document.querySelector("#reset");
 
@@ -53,7 +56,11 @@ textBoxElement.addEventListener("input", () => {
   sortedLetterDensity.forEach(([letter, count]) => {
     const letterItem = document.createElement("div");
     letterItem.classList.add("letter-item");
-
+    if (count > 0) {
+      lettersDensityContainer.style.display = "block";
+    } else {
+      lettersDensityContainer.style.display = "none";
+    }
     // Obliczanie procentu
     const letterPercentage = ((count / totalLetters) * 100).toFixed(2);
 

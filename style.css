@@ -107,6 +107,10 @@ body {
   background-color: var(--success-color);
 }
 
+.letters-density-container {
+  display: none;
+}
+
 .letters-density {
   display: flex;
   flex-direction: column;
